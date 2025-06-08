@@ -376,7 +376,7 @@ async function processUserCommand(command: string) {
     while (true) {
         try {
             const response = await client.chat.completions.create({
-                model: "gpt-4-1106-preview", // Fixed model name
+                model: "gpt-4.1-nano",
                 response_format: { type: "json_object" },
                 messages: messages,
             });
